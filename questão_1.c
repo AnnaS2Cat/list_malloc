@@ -24,10 +24,10 @@ int main() {
     c4->prox = c5;
     c5->prox = NULL;
 
-    struct Caixa* atual = c1;              // imprimo a lista
-    while (atual != NULL) {               //enquanto não chegar no último nó
-        printf("%d ", atual->valor);     //imprimo os valores
-        atual = atual->prox;            //avanço o nó
+    struct Caixa* p = c1;              // imprimo a lista
+    while (p != NULL) {               //enquanto não chegar no último nó
+        printf("%d ", p->valor);     //imprimo os valores
+        p= p->prox;            //avanço o nó
     }
 
     printf("\n");
