@@ -4,7 +4,7 @@ struct Caixa* concatena(struct Caixa* L1, struct Caixa* L2) {
 
     struct Caixa* p;
 
-    p = l1;   // p aponta para o primeiro elem de L1, p<-L1        (minha dúvida frequente)- l1 = p	l1 passa a apontar onde p estiver apontando, no caso pra nada (destrói a lista se p avança)
+    p = L1;   // p aponta para o primeiro elem de L1, p<-L1        (minha dúvida frequente)- l1 = p	l1 passa a apontar onde p estiver apontando, no caso pra nada (destrói a lista se p avança)
     while (p != NULL) {
         resultado = insere(resultado, p->valor);    //uso a função insere da questão 6 para copiar os valores de L1 em resultado enquanto a lista não chega a nulo
         p = p->prox;
